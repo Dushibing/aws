@@ -2,9 +2,9 @@
 from boto3 import Session
 import json
 import logging
-from error import SqsConnectionError
+#from error import SqsConnectionError
 
-class SqsConnectionError(object):
+class SqsConnectionError(Exception):
     pass 
 
 logger = logging.getLogger(__name__)
